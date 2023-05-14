@@ -19,4 +19,4 @@ Every button in it has a clicking effect ( for desktop type devices), which make
 ## ON/OFF Button
 There is an ON button, which toggles the calculator activity. The calculator is inactive, till the ON button is pressed. After this, the button changes to OFF, and we can then enter the numbers using the visible keyboard. (NOTE: Computer keyboard inputs would not work).
 
-#### Live Website: <a href="https://atanupanja-dhn.github.io/calculator-project/" target="_blank">Click Here</a>
+#### Live Website: [Click Here](https://atanupanja-dhn.github.io/calculator-project/)
