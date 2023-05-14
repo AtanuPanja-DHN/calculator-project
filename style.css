@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik:wght@300;400&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 10px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    /* background: linear-gradient(to right, #2AD2D8 0%, #5818D8 50%, #4397be 100%); */
+    background: url("images/bg_wooden.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+
+#calc h1{
+    font-size: 3.5rem;
+    margin: 20px;
+    color: white;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    text-transform: uppercase;
+    /* font-weight: 300; */
+}
+
+#calc {
+    padding: 5px 5px 0px 5px;
+    width: 30vw;
+    height: 76vh;
+    border: 2px solid black;
+    border-radius: 23px;
+    /* background-color: rgba(0, 0, 0, 0.829); */
+    background-color: rgb(88, 85, 79);
+    margin: 20px auto;
+    position: relative;
+    top: 10vmin;
+}
+
+#calcbody{
+    width: inherit;
+    height: inherit;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#screen {
+    background-color: rgb(207, 228, 225);
+    display: block;
+    /* width: 25vw;
+    height: 7vh; */
+    width: 22vw;
+    height: 9vh;
+    margin-bottom: 10px;
+    font-size: 3rem;
+    outline: none;
+    border: 3px solid black;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 10px 10px;
+    /* border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px; */
+    /* margin: auto; */
+}
+
+/* #keyboard {
+    width: 30vw;
+    height: 40vh;
+    border: 2px solid black;
+    margin: auto;
+    padding: 20px;
+} */
+
+tbody {
+    /* display: grid;
+    row-gap: 20px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+tr {
+    /* display: grid; */
+    /* grid-auto-flow: column; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn {
+    color: white;
+    /* background-color: rgba(0, 0, 0, 0.959); */
+    background: linear-gradient(90deg, rgb(73, 69, 64), rgb(98, 94, 88));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5vw;
+    height: 5vh;
+    /* border: 2px raised rgba(0, 0, 0, 0.829); */
+    border: 5px raised rgb(67, 64, 58);
+    border-radius: 10%;
+    /* box-shadow: black 4px 5px 1px; */
+    box-shadow: 0px 0px 4px 1px black;
+    cursor: pointer;
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#del, #clearAll{
+    color: rgb(177, 91, 101);
+}
+
+#on{
+    background: linear-gradient(90deg, rgb(177, 91, 101), rgb(144, 75, 92)) ;
+}
+
+
+/* Media Queries */
+/* @media only screen and (max-width: 980px) {
+    #calc h1{
+        font-size: 3rem;
+    }
+}
+@media only screen and (max-width: 860px) {
+    #calc h1{
+        font-size: 2.8rem;
+    }
+}
+@media only screen and (max-width: 780px) {
+    .btn{
+        font-size: 1.8rem;
+    }
+}
+@media only screen and (max-width: 700px) {
+    #calc h1{
+        font-size: 2.4rem;
+    }
+    .btn{
+        font-size: 1.6rem;
+    }
+    #calc{
+        width: 38vw;
+    }
+    #screen{
+        width: 30vw;
+    }
+    .btn{
+        width: 6vw;
+    }
+}
+@media only screen and (max-width: 600px) {
+    #calc h1{
+        font-size: 2.3rem;
+    }
+    .btn{
+        font-size: 1.4rem;
+    }
+} */
+
+@media only screen and (max-width: 980px){
+    #calc h1{
+        font-size: 3rem;
+    }
+    #calc {
+        width: 294px;
+    }
+    .btn{
+        width: 49px;
+    }
+    #screen{
+        width: 215.6px;
+    }
+}
+
+@media only screen and (max-width: 390px){
+    #calc h1{
+        font-size: 2.8rem;
+    }
+    #calc {
+        width: 250px;
+    }
+    .btn{
+        width: 36px;
+        font-size: 1.3rem;
+    }
+    #screen{
+        width: 165px;
+    }
+}
+@media only screen and (max-width: 237px){
+    #calc h1{
+        font-size: 2.6rem;
+    }
+    #calc {
+        width: 180px;
+        /* height:  */
+    }
+    .btn{
+        width: 30px;
+        font-size: 1.3rem;
+    }
+    #screen{
+        width: 150px;
+    }
+}
+
+@media only screen and (max-height: 485px){
+    /* #calc{
+        height: 70vh;
+    } */
+    #screen{
+        height: 7vh;
+        margin-bottom: 6px;
+    }
+    #calc h1{
+        margin: 18px;
+    }
+}
+@media only screen and (max-height: 415px){
+    /* #calc{
+        height: 70vh;
+    } */
+    #screen{
+        height: 7vh;
+        margin-bottom: 6px;
+    }
+    #calc h1{
+        margin: 16px;
+    }
+}
+@media only screen and (max-height: 380px){
+    /* #calc{
+        height: 70vh;
+    } */
+    #screen{
+        height: 7vh;
+        margin-bottom: 6px;
+    }
+    #calc h1{
+        margin: 14px;
+    }
+}
+@media only screen and (max-height: 350px){
+    /* #calc{
+        height: 70vh;
+    } */
+    #screen{
+        height: 7vh;
+        margin-bottom: 6px;
+    }
+    #calc h1{
+        margin: 12px;
+    }
+}
+@media only screen and (max-height: 340px){
+    #calc{
+        overflow-y: auto;
+    }
+    *{
+        font-size: 4vh;
+    }
+}
