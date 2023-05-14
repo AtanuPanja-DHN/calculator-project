@@ -8,6 +8,7 @@ The calculator can perform basic arithmetic calculations, like addition, subtrac
 ## States
 
 >### OFF State
+
 >### ON State
 
 ## Click effect of buttons
